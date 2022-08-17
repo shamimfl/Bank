@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bank </title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <style>
+            body{
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+        </style>
+    </head>
+<body>
+    <header>
+        <h1 class="text-green-400 text-4xl font-bold text-center mt-20">Welcome to your Bank</h1>
+    </header>
+
+    <main>
+        <section class="w-9/12 mx-auto mt-10 grid grid-cols-3 gap-5">
+            <div class="bg-yellow-400 text-white p-5 rounded shadow">
+                <h1 class="text-2xl font-semibold ">Deposit</h1>
+                <h1 class="text-3xl font-bold ">$ <span id="disply-deposit">00</span></h1>
+            </div>
+            <div class="bg-green-400 text-white p-5 rounded shadow">
+                <h1 class="text-2xl font-semibold ">Withdrew</h1>
+                <h1 class="text-3xl font-bold ">$ <span id="displyWithdrew">00</span></h1>
+            </div>
+            
+            <div class="bg-blue-400 text-white p-5 rounded shadow">
+                <h1 class="text-2xl font-semibold ">Blance</h1>
+                <h1 class="text-3xl font-bold ">$ <span id="blance">1200</span></h1>
+            </div>
+        </section>
+        <section class="mt-20  w-9/12 mx-auto grid grid-cols-2 gap-5">
+            <div class="bg-green-400 p-5">
+                <h1 class="text-3xl font-semibold mb-3">Deposit</h1>
+                <input type="number" id="deposit"
+                class="block w-9/12 p-2 shadow shadow-green-500 focus:outline-0 rounded"
+                placeholder="Enter Your Amount">
+                <button onclick="depositAmount()" class="font-bold bg-white px-4 py-2 mt-5 rounded uppercase">Submit</button>
+            </div>
+            <div class="bg-rose-400 p-5">
+                <h1 class="text-3xl font-semibold mb-3">Withdrew</h1>
+                <input type="number" id="withdrew"
+                class="block w-9/12 p-2 shadow shadow-green-500 focus:outline-0 rounded"
+                placeholder="Enter Your Amount">
+                <button onclick="WithdrewAmount()" class="font-bold bg-white px-4 py-2 mt-5 rounded uppercase">Submit</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
